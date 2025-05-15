@@ -33,6 +33,4 @@ jobs:
       - name: install dependencies
         run: pnpm install
       - name: publish
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: cd apps/ui-tars && pnpm run publish:win32
